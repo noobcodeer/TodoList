@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image:linear-gradient(90deg, rgba(239, 55, 31, 0.7),rgba(98, 30, 207,0.8));
+    color:#fff;
+}
+
+header{
+    font-size:25px;
+}
+header,form{
+    min-height: 20vh;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+}
+form input,
+form button{
+    padding:10px;
+    font-size: 20px;
+    border: none;
+    background:white;
+}
+
+form button{
+    color:rgba(171, 91, 137,0.9); 
+    background: #fff;
+    cursor: pointer;
+    transition:all 0.3s ease;
+}
+form button:hover{
+    color:#fff;
+    background:rgba(236, 90, 173, 0.9);
+}
+.todo-container{
+    display: flex;
+    justify-content:center;
+   justify-content:center;
+}
+
+.todo-list{
+    min-width: 33%;
+    list-style: none;
+}
+.todo{
+    margin: 0.5rem;
+    background:white;
+    color:black;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    transition: all 0.9s ease;
+}
+.todo li{
+    flex:1;
+}
+.btn-complete,
+.btn-delete{
+    background:#000;
+    color:yellow;
+    padding:8px;
+    cursor: pointer;
+    border:1px solid #fff;
+}
+
+.btn-complete{
+    background:rgb(43, 131, 2);
+    color:rgb(255, 255, 255);
+}
+.btn-delete{
+    background:rgb(209, 27, 27);
+    color:rgb(255, 255, 255);
+}
+.btn-complete:hover{
+    background:rgb(186, 246, 158);
+    color:rgb(43, 131, 2);
+}
+.btn-delete:hover{
+    background:rgb(241, 144, 144);
+    color:rgb(209, 27, 27);
+}
+.fa-check-square,.fa-trash-alt{
+    pointer-events: none;
+}
+.completed{
+    text-decoration: line-through;
+    opacity:0.4;
+}
+.fall{
+    transform: translateY(8rem) rotateZ(20deg);
+    opacity:0;
+}
+select{
+    -webkit-appearance:none ;
+    -moz-appearance:none;
+    appearance:none;
+    outline: none;
+    border: none;
+}
+.select{
+    margin:10px;
+    position:relative;
+    overflow:hidden;
+}
+select{
+    color: rgb(185 96 159);
+    width: 160px;
+    padding: 14px;
+    cursor: pointer;
+}
+.select:after{
+    content:'\25BC';
+    position:absolute;
+    background:rgb(244, 244, 244);
+    color:rgb(185 96 159);
+    top:0;
+    right:0;
+    padding:1rem;
+    pointer-events: none;
+}
+.select:hover:after{
+    background:rgb(185 96 159);
+    color:#fff;
+}
+.filter-todo{
+}
